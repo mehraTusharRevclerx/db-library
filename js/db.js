@@ -25,6 +25,12 @@ class Db {
       first = () =>{
         return this.arr[0]
       }
+
+            
       
+      last = () =>{
+        return this.arr[this.arr.length-1]
+      }
+
   }
   
