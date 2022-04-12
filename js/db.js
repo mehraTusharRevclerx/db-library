@@ -32,5 +32,10 @@ class Db {
         return this.arr[this.arr.length-1]
       }
 
+      remove = () =>{
+        // console.log(this.arr)  
+        return this.arr.slice(0,0);
+      }
+
   }
   
