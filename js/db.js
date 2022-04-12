@@ -10,6 +10,19 @@ class Db {
         return this
       }
     };
+    get = (objKey) =>{
+        for (let i = 0; i < this.arr.length; i++) {
+          Object.values(this.arr[i]).find(e =>{
+             if(e == objKey){
+               console.log(Object.values(this.arr[i]))
+              //  return Object.values(this.arr[i]);
+             }
+            });    
+        }
+      }
+    
+    
+      
       
   }
   
