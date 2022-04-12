@@ -22,7 +22,9 @@ class Db {
       }
     
     
-      
+      first = () =>{
+        return this.arr[0]
+      }
       
   }
   
