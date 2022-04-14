@@ -13,19 +13,19 @@ async function fetchJson() {
         console.log(db)
 
         db.insert(newObj2);
-
-        const remove = db.remove()
-        console.log(remove)
-
-        const first = db.first()
+        
+        // const remove = db.remove()
+        // console.log(remove)
+        
+        
+        const first = db.first("arun")
         console.log(first)
-
+        
         const last = db.last()
         console.log(last)
-
+        
         const firstname = db.get("arun")
         console.log(firstname)
-        
       }
       fetchJson().catch(error => {
         error.message;
