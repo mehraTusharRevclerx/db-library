@@ -15,10 +15,8 @@ class Db {
   find = (objKey) => {
     for (let i = 0; i < this.arr.length; i++) {
       Object.values(this.arr[i]).find((e) => {
-        if (e == objKey) {
-          console.log(this.arr[i]);
-          // return this.arr[i];
-        }
+        e == objKey && console.log(this.arr[i]);
+        // return this.arr[i];
       });
     }
   };
