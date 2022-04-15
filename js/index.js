@@ -1,10 +1,4 @@
 "use strict";
-const dbBtn = document.querySelector("#dbBtn");
-const insertBtn = document.querySelector("#insertBtn");
-const firstBtn = document.querySelector("#firstBtn");
-const lastBtn = document.querySelector("#lastBtn");
-const removeBtn = document.querySelector("#removeBtn");
-const findBtn = document.querySelector("#findBtn");
 
 async function fetchJson() {
   const response = await fetch("/assets/people.json");
@@ -15,7 +9,19 @@ async function fetchJson() {
 
   const people = await response.json();
   console.log(people);
+  mainFun(people);
+}
+fetchJson().catch((error) => {
+  error.message;
+});
 
+const mainFun = function (people) {
+  const dbBtn = document.querySelector("#dbBtn");
+  const insertBtn = document.querySelector("#insertBtn");
+  const firstBtn = document.querySelector("#firstBtn");
+  const lastBtn = document.querySelector("#lastBtn");
+  const removeBtn = document.querySelector("#removeBtn");
+  const findBtn = document.querySelector("#findBtn");
   let db;
 
   dbBtn.addEventListener("click", () => {
@@ -56,10 +62,7 @@ async function fetchJson() {
   console.log(firstname);
   // const remove = db.remove()
   // console.log(remove)
-}
-fetchJson().catch((error) => {
-  error.message;
-});
+};
 
 let newObj = [
   {
