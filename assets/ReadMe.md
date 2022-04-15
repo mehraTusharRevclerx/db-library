@@ -15,3 +15,7 @@
 - first() => user will get the first value in the database.
 
 - last() => user will get the last value in the database.
+
+- start() => user will be able to return the result from the specific index.
+
+- join() => user will be able to join two diff database.
