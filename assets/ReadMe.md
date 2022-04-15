@@ -8,7 +8,7 @@
 
 - update() => user can update their existing data in the database with the help of update function.
 
-- get() => user will provide the object key, in return they will get the object if the object key is in the database.
+- find() => user will provide the object key, in return they will get the object if the object key is in the database.
 
 - view() => user will be able to view the database (still more to understand working of view).
 
