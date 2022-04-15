@@ -48,8 +48,9 @@ const mainFun = function (people) {
   });
 
   removeBtn.addEventListener("click", () => {
-    const rem = db.remove();
-    yourDb.textContent = `your database has ${rem} entries`;
+    const rem = db.remove(false, false, false);
+    console.log(rem);
+    yourDb.textContent = JSON.stringify(db.arr);
     // console.log(last);
   });
 
