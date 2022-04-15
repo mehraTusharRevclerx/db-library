@@ -6,7 +6,6 @@ async function fetchJson() {
     const message = `An error has occured: ${response.status}`;
     throw new Error(message);
   }
-
   const people = await response.json();
   console.log(people);
   mainFun(people);
@@ -22,6 +21,7 @@ const mainFun = function (people) {
   const lastBtn = document.querySelector("#lastBtn");
   const removeBtn = document.querySelector("#removeBtn");
   const findBtn = document.querySelector("#findBtn");
+
   let db;
 
   dbBtn.addEventListener("click", () => {
@@ -58,10 +58,6 @@ const mainFun = function (people) {
     yourDb.textContent = JSON.stringify(firstname);
     console.log(firstname);
   });
-
-  console.log(firstname);
-  // const remove = db.remove()
-  // console.log(remove)
 };
 
 let newObj = [
