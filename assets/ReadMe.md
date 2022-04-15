@@ -1,4 +1,6 @@
-## Db library
+# Db library
+
+## Library Methods
 
 - db(arr) => user will provide json file or objects of array for creating a new database.
 
@@ -19,3 +21,13 @@
 - start() => user will be able to return the result from the specific index.
 
 - join() => user will be able to join two diff database.
+
+### queries :(
+
+- how return will work in find method and what does return do behind the scene. dig deeper into return.
+
+- how can i structure my library in best possible way.
+
+- how do i chain methods.
+
+- how can i test my library for diff test cases.
